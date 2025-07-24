@@ -1,69 +1,68 @@
-# React + TypeScript + Vite
+# Manish Gond [Portfolio]
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal developer portfolio — a fully responsive, interactive, and modern SPA (Single Page Application) built with React, TypeScript, and Framer Motion. This site showcases who I am, what I’ve built, and what I bring to the table as a software developer.
 
-Currently, two official plugins are available:
+<img width="1894" height="911" alt="image" src="https://github.com/user-attachments/assets/6f297b01-0af0-49fa-988e-61ad9fc0ba3a" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Framework**: [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animation**: [Framer Motion](https://www.framer.com/motion/)
+- **Build Tooling**: Vite
+- **Hosting**: GitHub Pages / Vercel / Netlify *(depending on where you host it)*
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 📌 Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- 🎯 Smooth scrolling SPA navigation
+- 🧠 Animated hero text with `FlipWords` component
+- 💻 Responsive design for mobile, tablet, and desktop
+- ✨ Modular section-based structure (Hero, About, Projects, etc.)
+- 🌊 Themed with a custom underwater color palette
+- 🔗 Easily extendable with new sections or animations
+
+---
+
+## 🧾 Folder Structure
+
+```bash
+├── public/
+├── src/
+│ ├── sections/ # Hero, About, Projects, etc.
+│ ├── ui/ # Reusable UI components (FlipWords, etc.)
+│ ├── assets/ # Static assets like icons, images
+│ └── styles/ # Tailwind & global CSS
+├── App.tsx # Main app layout
+└── index.tsx # Entry point
+```
+---
+
+## 🛠️ Running Locally
+
+To run the portfolio locally:
+
+```bash
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
+npm install
+npm run dev
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📬 Contact Me
+Want to collaborate or work together? Let’s talk!
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- 📧 Email: manish.n.gond@gmail.com
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 🌐 Website: yourdomain.com
+
+- 🐦 Twitter: @musicbymaxin
+
+- 💼 LinkedIn: linkedin.com/in/ManishGond
+
+## 📄 License
+This project is open-source and available under the MIT License.
